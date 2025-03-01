@@ -16,6 +16,17 @@ const { pageTitle } = Astro.props;
 		<title>{pageTitle}</title>
 	</head>
 	<body>
+		<script>
+			if (window.netlifyIdentity) {
+			  window.netlifyIdentity.on("init", (user) => {
+				if (!user) {
+				  window.netlifyIdentity.on("login", () => {
+					document.location.href = "/admin/";
+				  });
+				}
+			  });
+			}
+		</script>
 		<Header />
 		<h1>{pageTitle}</h1>
         <slot />
