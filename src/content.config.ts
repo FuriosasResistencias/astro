@@ -1,13 +1,14 @@
 import { defineCollection, z } from "astro:content";
 
-// Definir el esquema de los artículos con solo los campos básicos
+// Define the schema for your articles with title, description, author, and date
 const baseSchema = z.object({
   title: z.string(),
-  description: z.string(),
-  author: z.string(),
+  description: z.string(),  // Added description
+  author: z.string(),        // Added author
+  date: z.date(),            // Keep date as a required field
 });
 
-// Crear colecciones para las distintas categorías
+// Create collections for the different categories
 const noticias = defineCollection({
   schema: baseSchema,
 });
@@ -20,7 +21,7 @@ const agroecologia = defineCollection({
   schema: baseSchema,
 });
 
-// Exportar las colecciones para que Astro las reconozca
+// Export collections for Astro to recognize
 export const collections = {
   noticias,
   arteycultura,

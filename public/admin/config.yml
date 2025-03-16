@@ -10,6 +10,8 @@ collections:
     fields:
       - { label: "Título", name: "title", widget: "string" }
       - { label: "Fecha", name: "date", widget: "datetime" }
+      - { label: "Descripción", name: "description", widget: "string" }  # Added description
+      - { label: "Autor", name: "author", widget: "string" }  # Added author
       - { label: "Cuerpo", name: "body", widget: "markdown" }
 
   - name: "arteycultura"
@@ -20,6 +22,8 @@ collections:
     fields:
       - { label: "Título", name: "title", widget: "string" }
       - { label: "Fecha", name: "date", widget: "datetime" }
+      - { label: "Descripción", name: "description", widget: "string" }  # Added description
+      - { label: "Autor", name: "author", widget: "string" }  # Added author
       - { label: "Cuerpo", name: "body", widget: "markdown" }
 
   - name: "agroecologia"
@@ -30,6 +34,9 @@ collections:
     fields:
       - { label: "Título", name: "title", widget: "string" }
       - { label: "Fecha", name: "date", widget: "datetime" }
+      - { label: "Descripción", name: "description", widget: "string" }  # Added description
+      - { label: "Autor", name: "author", widget: "string" }  # Added author
       - { label: "Cuerpo", name: "body", widget: "markdown" }
-media_folder: "src/assets/images" # Location where files will be stored in the repo
-public_folder: "/assets/images"
+
+media_folder: "src/assets/images"  # Location where files will be stored in the repo
+public_folder: "/assets/images"  # Public folder for media assets
