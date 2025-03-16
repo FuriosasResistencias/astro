@@ -1,14 +1,7 @@
 ---
-layout: blog
 title: Título de mi nuevo artículo
 author: Maria de la Luz Delgado Gomez
 description: "Este es mi primer artículo usando el sistema de manejo de contenido. "
-pubDate: 2025-03-14T23:03:00.000Z
-image:
-  url: https://www.furiosasresistencias.com/profile_pic-768x432.webp
-  alt: texto alternativo
-tags:
-  - prueba
 ---
 Con el viento en la cara
 

@@ -1,0 +1,20 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import BlogPost from "../../components/BlogPost.astro";
+
+const pageTitle = "Agroecología";
+const allPosts = await getCollection("agroecologia");
+---
+<BaseLayout pageTitle={pageTitle}>
+  <p>Esta es la sección dedicada a Agroecología.</p>
+  <ul>
+    {allPosts.map((post) => (
+      <BlogPost
+        url={`/agroecologia/${post.slug}/`}
+        title={post.data.title}
+        description={post.data.description}
+      />
+    ))}
+  </ul>
+</BaseLayout>
