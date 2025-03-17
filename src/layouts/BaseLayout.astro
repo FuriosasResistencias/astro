@@ -3,36 +3,46 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import "../styles/global.css";
 
-const { pageTitle } = Astro.props;
+// Add TypeScript interface for props (optional but recommended)
+interface Props {
+  pageTitle: string;
+}
+
+const { pageTitle } = Astro.props as Props;
 ---
 
+<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+		<script src="https://identity.netlify.com/v1/netlify-identity-widget.js" defer></script>
 		<title>{pageTitle}</title>
 	</head>
 	<body>
+		<Header />
+		<main>
+			<h1>{pageTitle}</h1>
+			<slot /> <!-- Your page content will be injected here -->
+		</main>
+		<Footer />
+
+		<!-- Updated menu script path -->
+		<script src="/src/scripts/menu.js"></script>
+
+		<!-- Netlify Identity redirect script -->
 		<script>
 			if (window.netlifyIdentity) {
-			  window.netlifyIdentity.on("init", (user) => {
-				if (!user) {
-				  window.netlifyIdentity.on("login", () => {
-					document.location.href = "/admin/";
-				  });
-				}
-			  });
+				window.netlifyIdentity.on("init", user => {
+					if (!user) {
+						window.netlifyIdentity.on("login", () => {
+							document.location.href = "/admin/";
+						});
+					}
+				});
 			}
-		</script>
-		<Header />
-		<h1>{pageTitle}</h1>
-        <slot />
-		<Footer />
-		<script>
-			import "../scripts/menu.js";
 		</script>
 	</body>
 </html>
