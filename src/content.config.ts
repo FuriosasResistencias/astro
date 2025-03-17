@@ -2,7 +2,8 @@ import { defineCollection, z } from "astro:content";
 
 // Define the schema for your articles with title, description, author, and date
 const baseSchema = z.object({
-  thumbnail: z.string().optional(), // Adds featured image (optional)
+  title: z.string(),
+  thumbnail: z.string(), // Adds featured image (optional)
   description: z.string(),  // Added description
   author: z.string(),        // Added author
   date: z.date(),            // Keep date as a required field
