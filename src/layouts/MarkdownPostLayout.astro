@@ -4,32 +4,52 @@ const { frontmatter } = Astro.props;
 ---
 
 <BaseLayout pageTitle={frontmatter.title}>
-  <p><em>{frontmatter.description}</em></p>
-  <p>{frontmatter.date.toString().slice(0, 10)}</p>
+  <article class="post">
 
-  <p>Written by: {frontmatter.author}</p>
+    <img class="post-thumbnail" src={frontmatter.thumbnail} alt={frontmatter.title} />
 
-  <img src={frontmatter.thumbnail} width="300" alt={frontmatter.title} />
+    <p class="post-description"><em>{frontmatter.description}</em></p>
 
-  <slot />
+    <div class="post-body">
+      <slot />
+    </div>
+  </article>
+
+  <style>
+    .post {
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      text-align: left;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .post-title {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .post-thumbnail {
+      max-width: 60%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+
+    .post-description {
+      font-size: 1.2rem;
+      color: #555;
+      margin-bottom: 1.5rem;
+    }
+
+    .post-body {
+      text-align: left;
+      width: 100%;
+    }
+    
+    .post-body p {
+      margin-bottom: 1rem; /* Ensures spacing between paragraphs */
+    }
+  </style>
 </BaseLayout>
-
-<style>
-  a {
-    color: #00539F;
-  }
-
-  .tags {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .tag {
-    margin: 0.25em;
-    border: dotted 1px #a1a1a1;
-    border-radius: .5em;
-    padding: .5em 1em;
-    font-size: 1.15em;
-    background-color: #F8FCFD;
-  }
-</style>
