@@ -11,6 +11,7 @@ collections:
       - { label: "Título", name: "title", widget: "string" }
       - { label: "Fecha", name: "date", widget: "datetime" }
       - { label: "Descripción", name: "description", widget: "string" }  # Added description
+      - { label: "Featured Image", name: "thumbnail", widget: "image" }
       - { label: "Autor", name: "author", widget: "string" }  # Added author
       - { label: "Cuerpo", name: "body", widget: "markdown" }
 
@@ -23,6 +24,7 @@ collections:
       - { label: "Título", name: "title", widget: "string" }
       - { label: "Fecha", name: "date", widget: "datetime" }
       - { label: "Descripción", name: "description", widget: "string" }  # Added description
+      - { label: "Featured Image", name: "thumbnail", widget: "image" }
       - { label: "Autor", name: "author", widget: "string" }  # Added author
       - { label: "Cuerpo", name: "body", widget: "markdown" }
 
@@ -35,6 +37,7 @@ collections:
       - { label: "Título", name: "title", widget: "string" }
       - { label: "Fecha", name: "date", widget: "datetime" }
       - { label: "Descripción", name: "description", widget: "string" }  # Added description
+      - { label: "Featured Image", name: "thumbnail", widget: "image" }
       - { label: "Autor", name: "author", widget: "string" }  # Added author
       - { label: "Cuerpo", name: "body", widget: "markdown" }
 
