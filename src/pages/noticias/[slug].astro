@@ -1,6 +1,6 @@
 ---
 import { getCollection } from "astro:content";
-import BaseLayout from "../../layouts/BaseLayout.astro";
+import MarkdownPostLayout from "../../layouts/MarkdownPostLayout.astro";
 
 const { slug } = Astro.params;
 const allPosts = await getCollection("noticias");
@@ -11,9 +11,6 @@ if (!post) {
   throw new Error(`Post not found: ${slug}`);
 }
 
-const { title, description, author} = post.data;
-const content = post.body; // Get the content of the post
-
 // getStaticPaths function to tell Astro which paths to pre-render
 export async function getStaticPaths() {
   const posts = await getCollection("noticias");
@@ -23,11 +20,6 @@ export async function getStaticPaths() {
 }
 ---
 
-<BaseLayout pageTitle={title}>
-  <article>
-    <h1>{title}</h1>
-    <p>{description}</p>
-    <p><strong>Author:</strong> {author}</p>
-    <div>{content}</div> <!-- Display the main content of the post -->
-  </article>
-</BaseLayout>
+<MarkdownPostLayout frontmatter={post.data}>
+  {post.body} <!-- Displays the main content of the post -->
+</MarkdownPostLayout>
