@@ -5,21 +5,22 @@ import MarkdownPostLayout from "../../layouts/MarkdownPostLayout.astro";
 const { slug } = Astro.params;
 const allPosts = await getCollection("noticias");
 
-// Find the post based on the slug
 const post = allPosts.find((p) => p.slug === slug);
 if (!post) {
   throw new Error(`Post not found: ${slug}`);
 }
 
-// getStaticPaths function to tell Astro which paths to pre-render
+// Render the post content
+const { Content } = await post.render();
+
 export async function getStaticPaths() {
   const posts = await getCollection("noticias");
   return posts.map((post) => ({
-    params: { slug: post.slug }, // The slug is used to generate the URL
+    params: { slug: post.slug },
   }));
 }
 ---
 
 <MarkdownPostLayout frontmatter={post.data}>
-  {post.body} <!-- Displays the main content of the post -->
+  <Content /> <!-- Use the rendered Content component -->
 </MarkdownPostLayout>
