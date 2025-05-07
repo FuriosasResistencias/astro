@@ -2,44 +2,17 @@ backend:
   name: git-gateway
   branch: main
 collections:
-  - name: "noticias"
-    label: "Noticias"
-    folder: "src/content/noticias"
+  - name: "blog"
+    label: "Artículos"
+    folder: "src/content/blog"
     create: true
     slug: "{{slug}}"
     fields:
       - { label: "Título", name: "title", widget: "string" }
-      - { label: "Fecha", name: "date", widget: "datetime" }
+      - { label: "Fecha", name: "pubDate", widget: "datetime" }
       - { label: "Descripción", name: "description", widget: "string" }  # Added description
-      - { label: "Featured Image", name: "thumbnail", widget: "image" }
-      - { label: "Autor", name: "author", widget: "string" }  # Added author
-      - { label: "Cuerpo", name: "body", widget: "markdown" }
-
-  - name: "arteycultura"
-    label: "Arte y Cultura"
-    folder: "src/content/arteycultura"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - { label: "Título", name: "title", widget: "string" }
-      - { label: "Fecha", name: "date", widget: "datetime" }
-      - { label: "Descripción", name: "description", widget: "string" }  # Added description
-      - { label: "Featured Image", name: "thumbnail", widget: "image" }
-      - { label: "Autor", name: "author", widget: "string" }  # Added author
-      - { label: "Cuerpo", name: "body", widget: "markdown" }
-
-  - name: "agroecologia"
-    label: "Agroecología"
-    folder: "src/content/agroecologia"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - { label: "Título", name: "title", widget: "string" }
-      - { label: "Fecha", name: "date", widget: "datetime" }
-      - { label: "Descripción", name: "description", widget: "string" }  # Added description
-      - { label: "Featured Image", name: "thumbnail", widget: "image" }
-      - { label: "Autor", name: "author", widget: "string" }  # Added author
-      - { label: "Cuerpo", name: "body", widget: "markdown" }
+      - { label: "Imagen", name: "image", widget: "image" }
+      - { label: "Texto", name: "body", widget: "markdown", output: true}
 
 media_folder: "src/assets/images"  # Location where files will be stored in the repo
 public_folder: "/assets/images"  # Public folder for media assets
