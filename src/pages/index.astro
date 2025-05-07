@@ -1,28 +1,54 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
-const pageTitle = "Furiosas Resistencias";
+import Layout from '../layouts/Layout.astro';
+import BlogCard from '../components/BlogCard.astro';
+import { getCollection } from 'astro:content';
+
+const posts = await getCollection('blog');
 ---
-<BaseLayout pageTitle={pageTitle}>
-	<h2>Propósito</h2>
-    <p>
-        El imperialismo occidental representa la herida colectiva que une a las resistencias de nuestro continente. La realidad y el territorio que compartimos ha sido creado, de muchas maneras, por los procesos de expansión imperialista y la violencia que estos conllevan. El imperialismo le ha dado forma a la organización política en la que habitamos <strong>(el estado-nación)</strong>, al sistema económico mundial, a los sistemas de conocimiento hegemónicos e incluso las identidades con las que gran parte de la población se identifica (p. ej. <strong>Hombre-Mujer/Hetero/Cis</strong>).
-    </p>
-    <p>
-        En este contexto, surge la necesidad de examinar cómo el proceso y asentamiento del imperialismo es justificado, legitimado, e impulsado a través del tiempo y el territorio, así como sus efectos en los cuerpos y territorios bajo el yugo del occidente. Por tanto, este artículo trata de buscar una línea conductora en el actuar del imperio, el hilo rojo que conecta a todas las personas que viven y resisten.
-    </p>
 
-    <h2>Objetivos</h2>
-    <ul>
-        <li>Contextualizar el presente como resultado directo de procesos específicos relacionados con el imperialismo occidental, utilizando un enfoque decolonial para estudiar el contexto histórico, económico y social, así como la violencia sistémica ejercida por diferentes unidades geopolíticas.</li>
-        <li>Utilizar la presente investigación como una base conceptual e histórica para la investigación general de <em>Furiosas Resistencias</em>, donde se abordarán propuestas para la descolonización del cuerpo y el territorio.</li>
-        <li>Este primer artículo será la base para crear un espacio virtual donde colaboradores y colaboradoras puedan publicar escritos que giren en torno a la liberación, la resistencia, la colectivización y el cuidado comunal/personal.</li>
-    </ul>
+<Layout title="Furiosas Resistencias">
+	<main>
+		<div class="blog-grid">
+			{posts.map(post => (
+				<a href={`/${post.slug}`} class="card-link">
+					<BlogCard
+						title={post.data.title}
+						description={post.data.description}
+						image={post.data.image}
+					/>
+				</a>
+			))}
+		</div>
+	</main>
+</Layout>
 
-    <h2>Justificación</h2>
-    <p>
-        La descolonización del mundo y los cuerpos del mundo requiere historias y narrativas colectivas. La herida del imperialismo/colonialismo en América solo puede ser sanada en comunidad y para ello necesitamos una clara imagen de esta violencia fundacional.
-    </p>
-    <p>
-        El espacio virtual y el proyecto general de <em>Furiosas Resistencias</em> pretende servir como medio de difusión para estas narrativas, así como proporcionar una herramienta para crear una comunidad de conocimiento, resistencia y cuidado.
-    </p>
-</BaseLayout>
+<style>
+	main {
+		padding: 2rem;
+		max-width: 1400px;
+		margin: 0 auto;
+	}
+	.blog-grid {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 2rem;
+	}
+	.card-link {
+		text-decoration: none;
+	}
+	@media (max-width: 1200px) {
+		.blog-grid {
+			grid-template-columns: repeat(3, 1fr);
+		}
+	}
+	@media (max-width: 900px) {
+		.blog-grid {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+	@media (max-width: 600px) {
+		.blog-grid {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>
