@@ -20,7 +20,7 @@ Cuando se habla de imperialismo lo más importante a tomar en cuenta es que habl
 
 No se puede hablar del imperialismo desde afuera, es un fenómeno que atraviesa no solo nuestros cuerpos sino el mundo en si. Es la razón por la que hoy la mayoría de las gentes de la tierra se dividen en hombres y mujeres, en los blancos y la diversidad humana. Es la razón por la que habitamos en ciudades y el origen de la destrucción de lo rural. Lo vivimos día a día: trabajando por un salario, sintiendo el calor del desmonte, y presenciado como un tren llamado *Maya* destruye las mismas comunidades que dice representar.
 
-Este dolor colectivo que envuelve al mundo hoy, en el 2024 es completamente intencional. No es un sistema corrupto que debe ser reformado, es un sistema diseñado exactamente para ello. Para transferir las riquezas de la tierra y las personas a una serie instituciones e individuos especifica y es una realidad que por mucho tiempo el poder ha intentado ocultar de nosotres.
+Este dolor colectivo que envuelve al mundo hoy, en el 2024 es completamente intencional. No es un sistema corrupto que debe ser reformado, es un sistema diseñado exactamente para ello. Para transferir las riquezas de la tierra y las personas a una serie instituciones e individuos especificas y es una realidad que por mucho tiempo el poder ha intentado ocultar de nosotres.
 
 Ya no.
 
