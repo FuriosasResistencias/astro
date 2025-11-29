@@ -4,9 +4,9 @@ pubDate: 2025-11-28T21:22:00.000-06:00
 description: Porque a los comunistas les debería importar la recuperación
   territorial( y lo LGBT+, liberación, acabar con el supremacismo blanco, los
   derechos de les discapacidates, etc. etc.)
-image: https://res.cloudinary.com/furiosasresistencias/image/upload/v1764386977/82002537_3431445726897095_8912079468734971904_n_lpexxg_c_crop_w_800_h_400_tfvds1.jpg
+image: https://res.cloudinary.com/furiosasresistencias/image/upload/v1764387411/FZg0-uaXoAEDC_F_myu7l6.jpg
 ---
-**Tendencias reaccionarias en las organizaciones comunistas: problemas y soluciones.**
+# Tendencias reaccionarias en las organizaciones comunistas: problemas y soluciones.
 
 En la Rusia Zarista en finales del siglo XIX existía una amplia cantidad de energía obrera. La clase proletaria se constituía con fuerza desarrollando su identidad política.
 
