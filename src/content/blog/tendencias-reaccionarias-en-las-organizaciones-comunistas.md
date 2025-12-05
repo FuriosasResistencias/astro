@@ -16,7 +16,7 @@ Dicho de otra manera, la estrategia es captar la energía de la lucha económica
 
 “Hemos dado el primer paso, hemos despertado en la clase obrera la pasión por denunciar las arbitrariedades en las fábricas, las arbitrariedades de orden “económico”. Ahora debemos dar el paso siguiente: despertar en todas las capas populares medianamente conscientes, la pasión por denunciar las arbitrariedades de orden político.”
 
-Ahora en el contexto Mexicano la cantidad de energía de lucha proletaria es comparativamente baja. Sabemos que las tasas de sindicalización en el país rondan alrededor del 12%. Sumado a esto sabemos que una porción mayoritaria de los sindicatos son charros, aliados a les patrones y no a les trabajadores, entonces: ¿Qué hacer? 
+Ahora en el contexto Mexicano la cantidad de energía de lucha proletaria es comparativamente baja. Sabemos que las tasas de sindicalización en el país rondan alrededor del 12%. Sumado a esto, sabemos que una porción mayoritaria de los sindicatos son charros, aliados a les patrones y no a les trabajadores, entonces: ¿Qué hacer? 
 
 Mi propuesta es simple, utilicemos la energía de la lucha política para reavivar la lucha económica. Volvamos esta fogata un incendio monstruoso de nuevo. Captemos la energía que hay en la lucha política, en las contradicciones de las masas y dirijámosla al orden económico. 
 
@@ -28,12 +28,12 @@ Entonces, partimos de que la clase obrera existe como una colección de múltipl
 
 Los movimientos asociados con lo que podríamos llamar "política progre" (lucha anti-patriarcal, anti-racista, anti-colonial, etc. etc.) tiene una esencia fundamentalmente progresiva en el sentido histórico. Para ilustrar este punto daré dos ejemplos.
 
-1. La lucha contra el patriarcado ha cambiado la forma de existencia del sujeto mujer de una seria de relaciones reaccionarias. La mujer como propiedad del patriarca y su confinamiento al la esfera domestica es propio de los estados arcaicos más antiguos. Los avances en la lucha contra el patriarcado este modo de existencia a uno más moderno. Una proletaria explotada, como obrera, como mujer, y como mujer obrera. 
+1. La lucha contra el patriarcado ha cambiado la forma de existencia del sujeto mujer de una serie de relaciones sociales reaccionarias: La mujer como propiedad del patriarca y su confinamiento al la esfera domestica es propio de los estados arcaicos más antiguos. Los avances en la lucha contra el patriarcado este modo de existencia a uno más moderno. Una proletaria explotada, como obrera, como mujer, y como mujer obrera. 
 2. De la misma manera, en la lucha contra el supremacismo blanco ha desarrollado la condición de explotación de la más arcaica y brutal (la esclavitud simple) a volverle un proletario explotado, que además recibe el bruto de la violencia racial por parte del estado. 
 
 Entonces, las luchas por la liberación de las gentes representan un movimiento desarrollista, un movimiento hacia adelante que debe ser incorporado dentro del comunismo. Por la simple y sencilla razón que la tendencia desarrollista, el movimiento hacia adelante más importante es **la superación del capitalismo a través de la revolución socialista.** 
 
-Por la obviedad que estas luchas que en su nucleó avanzaron la liberación de las gentes se encuentran en una contradicción ampliamente visible. Porque la mujer, y las personas racionalizadas, las sexo-disidencias, los pueblos originarios, las neurodivergencias sean libres es **fuera del capitalismo**. El adoptar estas luchas dentro de la lucha de clase resuelve contradicciones tanto en las masas como en los partidos comunistas. 
+Por la obviedad que estas luchas que en su nucleo avanzaron la liberación de las gentes se encuentran en una contradicción ampliamente visible. Porque la única manera de que la mujer, y las personas racionalizadas, las sexo-disidencias, los pueblos originarios, las neurodivergencias sean libres es **fuera del capitalismo**. El adoptar estas luchas dentro de la lucha de clase resuelve contradicciones tanto en las masas como en los partidos comunistas. 
 
 Resuelven las tendencias reaccionarias que habitan dentro de los partidos comunistas, y sabemos que las tendencias reaccionarias, los movimientos hacia atrás tienen tendencias destructivas. Tendencias que pueden contribuir a la ruptura en el tejido organizativo. Resuelve las contradicciones de muchas luchas políticas que se encuentran en un callejón sin salida al enfrentarse al capitalismo. 
 
