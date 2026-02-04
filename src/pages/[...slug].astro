@@ -14,7 +14,11 @@ const { post } = Astro.props;
 const { Content } = await post.render();
 ---
 
-<Layout title={post.data.title}>
+<Layout 
+  title={post.data.title} 
+  description={post.data.description} 
+  image={post.data.image}
+>
   <article class="post">
     <div class="image-container">
       <img src={post.data.image} alt={post.data.title} />
